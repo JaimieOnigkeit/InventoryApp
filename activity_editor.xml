@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditorActivity"
+    style="@style/edit_theme">
+
+
+    <!--Product Name Field-->
+    <LinearLayout
+        android:id="@+id/product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/edit_text_and_label"
+            android:text="@string/product_name_label" />
+
+        <EditText
+            android:id="@+id/edit_product_name"
+            style="@style/edit_text_and_label"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <!--Price Field-->
+    <LinearLayout
+        android:id="@+id/product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_name"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/edit_text_and_label"
+            android:text="@string/product_price_label" />
+
+        <EditText
+            android:id="@+id/edit_product_price"
+            style="@style/edit_text_and_label"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <!--Quantity Field-->
+    <LinearLayout
+        android:id="@+id/product_qty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_price"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/edit_text_and_label"
+            android:text="@string/product_qty_label" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/increment_qty_view"
+                style="@style/up_down_button_style"
+                android:text="@string/increment_button" />
+            <EditText
+                android:id="@+id/edit_product_quantity"
+                style="@style/quantity_label"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/decrement_qty_view"
+               style="@style/up_down_button_style"
+                android:text="@string/decrement_button" />
+            </LinearLayout>
+    </LinearLayout>
+
+    <!--Supplier Name Field-->
+    <LinearLayout
+        android:id="@+id/supplier_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_qty"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/edit_text_and_label"
+            android:text="@string/supplier_name_label" />
+
+        <EditText
+            android:id="@+id/edit_supplier_name"
+            style="@style/edit_text_and_label"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <!--Supplier Phone Field-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/supplier_name"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/edit_text_and_label"
+            android:text="@string/supplier_phone_label" />
+
+        <EditText
+            android:id="@+id/edit_supplier_phone"
+            style="@style/edit_text_and_label"
+            android:inputType="number" />
+
+    </LinearLayout>
+</RelativeLayout>

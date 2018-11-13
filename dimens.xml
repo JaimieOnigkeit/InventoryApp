@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="label_text_size">18sp</dimen>
+    <dimen name="summary_text_size">18sp</dimen>
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="summary_padding">8dp</dimen>
+    <dimen name="product_text_size">22sp</dimen>
+    <dimen name="line_height">2dp</dimen>
+    <dimen name="up_down_button_dimen">50dp</dimen>
+</resources>

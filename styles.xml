@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent1</item>
+    </style>
+
+    <style name="main_theme">
+        <item name="android:background">@color/colorPrimaryDark</item>
+
+    </style>
+
+    <style name="edit_theme">
+        <item name="android:background">@color/colorAccent1</item>
+    </style>
+
+    <style name="edit_text_and_label">
+    <item name="android:layout_weight">2</item>
+    <item name="android:layout_width">0dp</item>
+    <item name="android:textColor">@color/colorText</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:textSize">@dimen/label_text_size</item>
+</style>
+
+    <style name="quantity_label">
+        <item name="android:layout_weight">2</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/label_text_size</item>
+    </style>
+
+    <style name="product_name_theme">
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">@dimen/product_text_size</item>
+    </style>
+
+    <style name="summary_theme">
+    <item name="android:layout_weight">1</item>
+    <item name="android:layout_width">0dp</item>
+    <item name="android:textColor">@color/colorText</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:padding">@dimen/activity_margin</item>
+    <item name="android:textSize">@dimen/summary_text_size</item>
+    </style>
+
+    <style name="summary_label_theme">
+        <item name="android:layout_weight">2</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">@dimen/summary_padding</item>
+        <item name="android:textSize">@dimen/summary_text_size</item>
+    </style>
+
+    <style name="up_down_button_style">
+        <item name="android:layout_height">@dimen/up_down_button_dimen</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/colorAccent2</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+</resources>
